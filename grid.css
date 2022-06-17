@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --backgrounds: hsl(0, 0%, 95%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --cyan: hsl(184, 100%, 22%);
+    --orange: hsl(31, 77%, 52%);
+    --font-size: 15px;
+}
+
+header{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+header .button1{
+    margin: 10px;
+    background-color: rgb(221, 19, 19);
+    border: none;
+    padding: 9px 20px;
+    border-radius: 7px;
+    font-size: var(--font-size);
+    color: var(--backgrounds);
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+}
+header a:hover{
+    background-color: skyblue;
+    color: white;
+    border: 2px solid var(--paragraphs);
+}
+
+header .button2{
+    margin: 10px;
+    background-color: rgb(15, 218, 150);
+    border: none;
+    padding: 9px 20px;
+    border-radius: 7px;
+    font-size: var(--font-size);
+    color: var(--backgrounds);
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    display: grid;
+    width: 50%;
+    max-width: 1440px;
+    justify-content: center;
+    grid-template-areas: 
+    'a a a a b b'
+    'a a a a b b'
+    'c c c d d d'
+    'c c c e e e'
+    ;
+    gap: 10px;
+    width: 40%;
+    margin: auto;
+    
+}
+.box-1{
+    background-color: rgb(235, 80, 32);
+    grid-area: a;
+    padding: 6em;
+}
+.box-2{
+    background-color: rgb(255, 164, 1);
+    grid-area: b;
+    padding: 4em;
+}
+.box-3{
+    background-color: green;
+    grid-area: c;
+    padding: 3em;
+}
+.box-4{
+    background-color: cyan;
+    grid-area: d;
+    padding: 3em;
+}
+.box-5{
+    background-color: cyan;
+    grid-area: e;
+    padding: 3em;
+}
